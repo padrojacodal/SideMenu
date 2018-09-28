@@ -266,7 +266,7 @@ open class SideMenuTransition: UIPercentDrivenInteractiveTransition {
         mainView?.layer.shadowOpacity = 0
         menuView?.layer.shadowOpacity = 0
         if let topNavigationController = mainViewController as? UINavigationController {
-            topNavigationController.interactivePopGestureRecognizer!.isEnabled = true
+            topNavigationController.interactivePopGestureRecognizer!.isEnabled = false
         }
         if let originalSuperview = originalSuperview, let mainView = mainViewController?.view {
             originalSuperview.addSubview(mainView)
